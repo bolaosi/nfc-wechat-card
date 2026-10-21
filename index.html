@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080f16">
+  <meta name="description" content="Lazlo 的电子名片 · Embedded Systems · PCB Design · IoT。保存微信二维码，认识一下。">
+  <meta name="referrer" content="no-referrer">
+  <title>Lazlo · 电子名片</title>
+  <link rel="icon" href="./assets/chip.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="circuit" aria-hidden="true"></div>
+  <main class="page">
+    <div class="masthead" aria-hidden="true"><span class="brand">L<span class="brand-dot">.</span></span><span>DIGITAL BUSINESS CARD</span><span class="edition">01 / CONNECT</span></div>
+    <article class="card" aria-labelledby="name">
+      <header class="identity">
+        <div class="eyebrow"><span class="signal" aria-hidden="true"></span> LET’S CONNECT</div>
+        <h1 id="name">Lazlo<span aria-hidden="true">.</span></h1>
+        <p class="specialty">Embedded Systems <span>·</span> PCB Design <span>·</span> IoT</p>
+        <div class="divider" aria-hidden="true"><span></span><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4m6-4v4M9 18v4m6-4v4M2 9h4m-4 6h4m12-6h4m-4 6h4"/><rect x="9" y="9" width="6" height="6" rx="1"/></svg><span></span></div>
+      </header>
+      <section class="connect" aria-label="微信联系方式">
+        <div class="qr-shell">
+          <span class="corner top-left" aria-hidden="true"></span><span class="corner top-right" aria-hidden="true"></span><span class="corner bottom-left" aria-hidden="true"></span><span class="corner bottom-right" aria-hidden="true"></span>
+          <a class="qr-link" href="./assets/wechat-qr.png" target="_blank" rel="noopener" aria-label="打开 Lazlo 的微信二维码原尺寸图片"><img id="wechat-qr" src="./assets/wechat-qr.png" width="790" height="790" alt="Lazlo 的个人微信二维码，扫一扫添加好友" fetchpriority="high" decoding="async"></a>
+        </div>
+        <h2>微信扫一扫 <span>·</span> 添加好友</h2>
+        <p class="invitation">从一次连接，开始更多可能。</p>
+        <a class="save-button" id="save-qr" href="./assets/wechat-qr.png" download="Lazlo-WeChat.png"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"/></svg><span>保存二维码图片</span></a>
+        <p class="instructions">保存图片后，可在微信中识别二维码</p>
+        <p class="save-hint" id="save-hint" role="status" aria-live="polite">如未自动保存，点开二维码，长按图片保存。</p>
+      </section>
+      <footer class="card-footer"><span class="footer-line" aria-hidden="true"></span><span>KEEP IN TOUCH</span><span class="footer-line" aria-hidden="true"></span></footer>
+    </article>
+    <footer class="page-footer"><span aria-hidden="true">↳</span> A small tap. A new connection.</footer>
+  </main>
+</body>
+</html>
